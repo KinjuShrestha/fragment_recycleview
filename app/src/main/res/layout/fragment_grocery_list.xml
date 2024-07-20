@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DED5ED"
+    tools:context=".GroceryList">
+
+    <EditText
+        android:id="@+id/groceryEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Enter the grocery item"
+        android:inputType="text"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="10dp"
+        android:text="Add" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="720dp"
+        android:paddingTop="50dp" />
+
+</FrameLayout>
